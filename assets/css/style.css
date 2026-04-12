@@ -45,6 +45,9 @@ body {
 header,
 .navbar {
   background-color: #24252a;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #brand {
