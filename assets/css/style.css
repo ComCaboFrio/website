@@ -51,13 +51,13 @@ header,
 }
 
 #brand {
-  width: 100px;
-  height: 100px;
+  width: auto;
+    height: 50px;
 
 }
 
 .navbar-brand {
-  padding: 0 0 15px 15px;
+  padding: 0 0 0 15px;
   color: #ffffff;
 }
 
