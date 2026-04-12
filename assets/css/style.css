@@ -151,6 +151,11 @@ header,
   padding-bottom: 0;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 #carouselExampleDark .carousel-inner,
 #carouselExampleDark .carousel-item {
   height: 100vh;
