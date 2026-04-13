@@ -50,7 +50,7 @@ header,
     justify-content: space-between;
 }
 
-#brand {
+#brand .navbar-brand img {
   width: auto;
     height: 20px;
     object-fit: contain;
