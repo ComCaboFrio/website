@@ -51,11 +51,9 @@ header,
 }
 
 #brand {
-  width: 150px;
-    height: 75px;
-    padding: auto;
-    margin: auto;
-
+  width: auto;
+    height: 20px;
+    object-fit: contain;
 }
 
 .navbar-brand {
