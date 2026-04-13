@@ -51,9 +51,8 @@ header,
 }
 
 #brand .navbar-brand img {
-  width: auto;
-    height: 20px;
-    object-fit: contain;
+  width: 183px;
+    height: 48px;
 }
 
 .navbar-brand {
@@ -63,6 +62,7 @@ header,
 
 .navbar-brand:hover {
   color: #fff;
+  color: #f7f7f7;
 }
 
 #navbar-links {
