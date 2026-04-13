@@ -44,7 +44,7 @@ body {
 
 header,
 .navbar {
-  background-color: #24252a;
+  background-color: linear-gradient(135deg, #0f2a44, #1f4e79);
   display: flex;
   align-items: center;
     justify-content: space-between;
