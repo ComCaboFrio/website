@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+1p:wght@300;400;500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@media (max-width: 576px) {}
 
-@media (max-width: 480px) {}
-
-@media (max-width: 400px) {}
-
-@media (max-width: 360px) {}
 
 @media (min-width: 1200px) {
   .container {
@@ -44,7 +38,7 @@ body {
 
 header,
 .navbar {
-  background-color: linear-gradient(135deg, #0f2a44, #1f4e79);
+  color: linear-gradient(135deg, #0f2a44, #1f4e79);
   display: flex;
   align-items: center;
     justify-content: space-between;
@@ -61,9 +55,9 @@ header,
 }
 
 .navbar-brand:hover {
-  color: #fff;
-  color: #f7f7f7;
+  color: #ffffff;
 }
+
 
 #navbar-links {
   display: flex;
@@ -93,7 +87,7 @@ header,
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: linear-gradient(135deg, #0f2a44, #1f4e79);
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -111,19 +105,19 @@ header,
   cursor: pointer;
 }
 
-#navbar-links a {
-  color: #ffffff;
+#navbar-links {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 #navbar-links a:hover {
   border-radius: 25px;
-  box-shadow: 0 0 2px #ffffff;
-background: linear-gradient(135deg, #0f2a44, #1f4e79);
+  box-shadow: 0 0 2px #ff0202;
+    color: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 .button {
   border: 0;
-  background-color: transparent;
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 /* NAV MENU */
@@ -141,10 +135,11 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 
 .hero {
     background: linear-gradient(135deg, #0f2a44, #1f4e79);
-      color: white;
+      color: #fff;
       text-align: center;
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
+  margin-bottom: 2px;
   
 }
 
@@ -237,10 +232,10 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 .main-btn:hover {
   font-family: "Poppins";
   text-decoration: none;
-  color: #ffffff;
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-  border-color: 1px solid #ffffff;
+  color: #007BFF;
 
+  background-color: transparent;
+    box-shadow: 0px 0px 10px #f9f9f9 inset;
 }
 
 #carouselExampleDark .carousel-indicators button {
@@ -248,7 +243,7 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 #carouselExampleDark .carousel-indicators .active {
-  background-color: #65daf9;
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 /* =========================
@@ -278,8 +273,7 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 .cards-list {
-  z-index: 10;
-  margin-top: -100px;
+margin-top: 25pxpx;
   padding-top: 0;
   padding-bottom: 0;
   justify-content: center;
@@ -378,12 +372,14 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 
 .swiper-slide-button {
   margin-top: -52px;
-  color: #272a24;
+  color: linear-gradient(135deg, #0f2a44, #1f4e79);
+    ;
 
 }
 
 .swiper-slide-button:hover {
-  color: #2a2a2480;
+  color: linear-gradient(135deg, #0f2a44, #1f4e79);
+    ;
 }
 
 .swiper-slide-button::before,
@@ -408,7 +404,7 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
 .slider-wrapper .swiper-pagination-bullet {
-  background: #282a24;
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
   height: 15px;
   width: 15px;
   padding: 20px auto;
@@ -428,7 +424,7 @@ background: linear-gradient(135deg, #0f2a44, #1f4e79);
   justify-content: flex-end;
   position: relative;
   width: 100%;
-  background: linear-gradient(#ffffff80, #45474b15);
+  
 }
 
 .main-title {
