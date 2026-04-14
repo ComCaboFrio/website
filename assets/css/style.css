@@ -4,12 +4,24 @@
 
 @media (min-width: 1200px) {
   .container {
+    max-width: 1320px;
+    }
+    }
+    
+    @media (max-width: 991px) {
+      #menu .navbar-nav .nav-link {
+        padding: 10px 0;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
   }
 }
 
+@media (max-width: 991px) {
+  #menu .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
 
 .form-container {
   display: flex;
@@ -33,113 +45,93 @@ body {
 .row {
   margin: 0;
 }
-
-/* Barra de navegação */
-
-header,
-.navbar {
-  color: linear-gradient(135deg, #0f2a44, #1f4e79);
-  display: flex;
-  align-items: center;
-    justify-content: space-between;
+.col-12 {
+  margin: 0;
 }
 
+/*NAVBAR*/
 .navbar-brand img {
   width: 183px;
-    height: 48px;
+  height: 48px;
+  display: flex;
+    align-items: center;
+  }
+  
+  .navbar {
+    width: 100%;
 }
 
 .navbar-brand {
+  display: flex;
+    align-items: center;
   padding: 0 0 0 15px;
-  color: #ffffff;
 }
 
 .navbar-brand:hover {
   color: #ffffff;
 }
 
-
-#navbar-links {
+#menu .navbar-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+    /* direita */
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  padding-left: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   list-style: none;
-  text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: linear-gradient(135deg, #0f2a44, #1f4e79);
-  text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 1.5;
-  transition: 0.5s;
-  padding-left: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-right: 20px;
-  margin-right: 20px;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  cursor: pointer;
+position: relative;
+  /* remove o absolute */
+  z-index: 1000;
 }
 
-#navbar-links {
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+#menu .navbar-nav a {
+  text-decoration: none;
+  color: #0f2a44;
+  transition: 0.3s;
 }
 
-#navbar-links a:hover {
-  border-radius: 25px;
-  box-shadow: 0 0 2px #ff0202;
-    color: linear-gradient(135deg, #0f2a44, #1f4e79);
+#menu .navbar-nav a:hover {
+  opacity: 0.7;
 }
-
-.button {
-  border: 0;
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-}
-
-/* NAV MENU */
 
 #menu .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0.3rem 0.8rem;
 }
 
-.menu-toggle {
-  margin-left: 10px;
+/* Estilos para o menu toggle */
+.navbar-toggler {
+  border: 1px solid #666;
+  transition: all 0.25s ease;
 }
+
+.navbar-toggler:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: 1px solid #666;
+  box-shadow: none;
+}
+
 .navbar-nav .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/*======================
+       HERO SECTION
+  ======================*/
 .hero {
     background: linear-gradient(135deg, #0f2a44, #1f4e79);
       color: #fff;
       text-align: center;
   padding: 25px 20px;
   text-align: center;
-  margin-bottom: 2px;
+  border-bottom: 1px solid rgba;
   
 }
 
@@ -157,12 +149,13 @@ header,
   margin: 5px;
   padding: 12px 20px;
   text-decoration: none;
+  color: white;
   border-radius: 6px;
 }
 
 .hero-buttons a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #007BFF;
   background-color: transparent;
   box-shadow: 0px 0px 10px #f9f9f9 inset;
 }
@@ -243,39 +236,36 @@ header,
 }
 
 #carouselExampleDark .carousel-indicators .active {
+  color: #0f2a44;
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
+
 
 /* =========================
     START information cards
    ========================= */
 
-.card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  max-width: 1400px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: linear-gradient(135deg, #0f2a44, #1f4e79);
-}
-
-
 .slider-wrapper {
   overflow: hidden;
   max-width: 100%;
-  margin: 0 70px 0;
+  margin: 30px 70px 40px;
   background-color: transparent;
 }
 
+.text-cards {
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #24252a;
+  text-align: center;
+  margin-bottom: 8px;
+  position: relative;
+  width: 100%;
+}
 .cards-list {
-margin-top: 25pxpx;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-top: 25pxpx;
+  margin: 25px;
   justify-content: center;
   position: relative;
   display: flex;
@@ -323,7 +313,7 @@ margin-top: 25pxpx;
 .card-list .card-item .user-name {
   text-align: center;
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 24px;
   margin: 0 0 0 0;
   padding: 15px 0 15px 0;
   color: #ffffff;
