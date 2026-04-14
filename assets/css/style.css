@@ -136,7 +136,7 @@ position: relative;
 }
 
 .hero h1 {
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 15px;
 }
 
@@ -169,6 +169,13 @@ position: relative;
   color: #007BFF;
 }
 
+/*linha de separação*/
+.divisor {
+  width: 10%;
+  height: 1px;
+
+  margin: auto;
+}
 /*====================
         carousel
   ====================*/
@@ -189,7 +196,7 @@ position: relative;
 }
 #carouselExampleDark .carousel-inner,
 #carouselExampleDark .carousel-item {
-  height: 60vh;
+  height: 61vh;
 }
 
 #carouselExampleDark .carousel-caption {
@@ -241,31 +248,21 @@ position: relative;
 }
 
 
-/* =========================
-    START information cards
-   ========================= */
+/* =====================
+        START CARDS
+   ===================== */
 
 .slider-wrapper {
   overflow: hidden;
   max-width: 100%;
-  margin: 30px 70px 40px;
-  background-color: transparent;
+  margin: 25px 25px;
+    padding: 25px 25px;
+    background-color: transparent;
 }
 
-.text-cards {
-  font-family: "Poppins";
-  font-size: 24px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #24252a;
-  text-align: center;
-  margin-bottom: 8px;
-  position: relative;
-  width: 100%;
-}
 .cards-list {
-  margin-top: 25pxpx;
-  margin: 25px;
+  margin-top: 15pxpx;
+    margin: 25px 10px;
   justify-content: center;
   position: relative;
   display: flex;
@@ -361,15 +358,13 @@ position: relative;
 }
 
 .swiper-slide-button {
-  margin-top: -52px;
-  color: linear-gradient(135deg, #0f2a44, #1f4e79);
-    ;
+  margin-top: 10px;
+    color: #1f4e79;
 
 }
 
 .swiper-slide-button:hover {
-  color: linear-gradient(135deg, #0f2a44, #1f4e79);
-    ;
+  color: #1f4e79;
 }
 
 .swiper-slide-button::before,
