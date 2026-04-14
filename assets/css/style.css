@@ -23,6 +23,7 @@
   }
 }
 
+
 .form-container {
   display: flex;
   justify-content: center;
@@ -132,6 +133,7 @@ position: relative;
     gap: 10px;
   }
 }
+
 .hero {
     background: linear-gradient(135deg, #0f2a44, #1f4e79);
       color: #fff;
@@ -153,8 +155,10 @@ position: relative;
 }
 
 .hero-buttons a {
+  width: 100%;
   margin: 5px;
   padding: 12px 20px;
+  text-align: center;
   text-decoration: none;
   color: white;
   border-radius: 6px;
@@ -423,8 +427,7 @@ position: relative;
   font-size: 10px;
   font-weight: 450;
   color: #24252a;
-  padding-top: 20px;
-  margin: 0 0 65px 0;
+  padding: 30px 0;
   font-size: 40px;
   text-align: center;
 }
@@ -450,6 +453,7 @@ position: relative;
   font-weight: 400;
   color: #24252a;
   text-align: justify;
+  padding: 30px 0;
 }
 
 .about-title {
@@ -457,6 +461,7 @@ position: relative;
   color: #0355cc;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 30px 0 0 0;
 }
 
 #about-list {
