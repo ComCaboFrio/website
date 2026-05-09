@@ -15,6 +15,9 @@
   }
 }
 
+.container {
+  width: 1800px;
+}
 .form-container {
   display: flex;
   justify-content: center;
@@ -57,7 +60,13 @@ body {
   }
   
 .navbar {
-  width: 100%;
+
+      width: 100%;
+      position: sticky;
+        top: 0;
+        z-index: 9999;
+        background: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
@@ -121,6 +130,11 @@ body {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+/*
+=====================
+    MENU INDEX 
+=====================
+*/
 /*
 ==========================                     
       HERO SECTION
@@ -768,11 +782,6 @@ body {
   margin: 0;
 }
 
-.secao {
-  padding: 60px 20px;
-  text-align: center;
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -793,70 +802,12 @@ body {
 transform: translateY(-5px);
 }
 
-.turismo {
-background: #f4f4f4;
-}
-
-.parceiros {
-background: #f7f7f7;
-}
-
-.contato {
-background: #222;
-  color: white;
-
-}
 
 footer {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
   color: white;
   text-align: center;
   padding: 20px;
-}
-
-/*
-=======================                  
-    FOOTER CONTATO 
-=======================
-*/
-/* Mantém o card e as mensagens centralizados */
-/* Mantém o card e a mensagem centralizados */
-.form-container {
-  display: flex;
-  justify-content: center;
-  /* centraliza horizontal */
-  align-items: flex-start;
-  /* evita empurrar verticalmente */
-  padding: 50px 20px;
-  /* espaçamento */
-}
-
-/* O card do formulário */
-.form-container .card {
-  width: 100%;
-  max-width: 600px;
-  /* limita tamanho máximo */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Mensagem de sucesso/erro */
-#form .success-message,
-#error-message {
-  margin-top: 20px;
-  font-size: 16px;
-  color: #24252a;
-  text-align: center;
-}
-
-.row {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-
-.col-12 {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
 }
 
 #footer-section {
@@ -1104,7 +1055,7 @@ footer {
 }
 
 .bottom_title:hover {
-  color: #0355cc;
+  color: #cc9603;
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
@@ -1117,6 +1068,219 @@ footer {
   }
 }
 
+/*
+=======================
+  MENU PROFISSIONAIS 
+=======================
+*/
+#servicos {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.servicos {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+/*
+=====================
+    MENU TURISNO 
+=====================
+*/
+#turismo {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.turismo-cf {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+/*
+=====================
+    MENU DICAS
+=====================
+*/
+
+#dicas {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.dica {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+.lugares {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+/*
+=====================
+    MENU SOBRE 
+=====================
+*/
+
+#sobre {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.secao {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projeto {
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+.sobre-projeto {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins",
+    sans-serif;
+  color: #fff;
+}
+
+/*
+=======================                  
+      MENU CONTATO
+      FORMULÁRIO
+=======================
+*/
+
+.form-control:focus {
+  border-color: 2px #1f4e79 !important;
+  box-shadow: 0 0 5px rgba(31, 78, 121, 0.3) !important;
+}
+
+/* BORDA DOS CAMPOS */
+.form-control {
+  border: 1px solid #1f4e79;
+}
+
+/* FUNDO DO ÍCONE */
+.input-group-text {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+  width: 25px;
+  /* aumenta largura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f4e79;
+  color: white;
+  border: 1px solid #1f4e79;
+
+
+}
+
+/* TEXTO PLACEHOLDER */
+.form-control::placeholder {
+  color: #1f4e79;
+}
+
+
+
+#contato {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+#contato .row {
+  margin: 0;
+  padding: 0;
+}
+
+#contato .col-12 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  /* centraliza horizontal */
+  align-items: flex-start;
+  /* evita empurrar verticalmente */
+  padding: 15px 20px;
+  /* espaçamento */
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+/* O card do formulário */
+.form-container .card {
+  width: 50%;
+  height: 100%;
+  /* limita tamanho máximo */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.form-container .card:hover {
+  transform: none !important;
+}
+
+/* Mensagem de sucesso/erro */
+#form .success-message,
+#error-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #24252a;
+  text-align: center;
+}
+
+
+.btn-enviar {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-enviar:hover {
+  text-decoration: none;
+  color: #007BFF;
+  background: transparent;
+  background-image: none;
+  border: 2px solid #007BFF;
+  box-shadow: 0px 0px 10px #f9f9f9 inset;
+
+
+
+}
 /*
 =====================
   END OF STYLE.CSS 

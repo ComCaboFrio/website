@@ -77,55 +77,53 @@
     <main class="site-content">
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg px-4">
 
-            <div class="container">
+    <!--NAV BRAND-->
+    <a class="navbar-brand" href="index.html">
+        <img src="img/logo_06.png" alt="ComCaboFrio">
+    </a>
 
-                <!--NAV BRAND-->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo_06.png" alt="ComCaboFrio">
-                </a>
+            <!--NAV TOGGLER-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!--NAV TOGGLER-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!--NAV MENU-->
+            <div class="collapse navbar-collapse" id="menu">
 
-                <!--NAV MENU-->
-                <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
 
-                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Profissionais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="turismo.html">Turismo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dicas.html">Dicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="servicos.html">Profissionais</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="turismo.html">Turismo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dicas.html">Dicas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contato.html">Contato</a>
-                        </li>
-                    </ul>
+                </ul>
                 </div>
-            </div>
 
         </nav>
 
 
         <!-- FORMULÁRIO Fale Conosco -->
-        <section class="contact-section">
+        <section id="contato" class="contact-section">
             <div class="form-container">
-                <div class="card shadow-sm">
-                    <div class="card-header bg-primary text-white text-center">
+                <div class="card shadow-sm border-0 rounded-4">
+                    <div class="card-header text-white text-center">
 
                         <h2>Fale Conosco</h2>
                         <p>Preencha os campos abaixo corretamente</p>
@@ -172,7 +170,7 @@
                             </div>
 
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary px-5">Enviar</button>
+                                <button type="submit" class="btn-enviar ">Enviar</button>
                             </div>
                         </form>
 
