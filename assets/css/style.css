@@ -16,8 +16,15 @@
 }
 
 .container {
+  width: 100%;
+  
+  }
+  
+  .container-footer {
   width: 1800px;
+  background-color: #25D366;
 }
+
 .form-container {
   display: flex;
   justify-content: center;
