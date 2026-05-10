@@ -16,7 +16,8 @@
 }
 
 .container {
-  width: 1800px;
+display: flex;
+  flex-wrap: wrap;
 }
 .form-container {
   display: flex;
@@ -207,6 +208,7 @@ body {
 */
 .container-fluid {
   padding: 0;
+  background-color: #ffffff;
 }
 
 .carousel-section {
