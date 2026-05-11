@@ -719,8 +719,9 @@ margin: 25px;
   font-family: "Poppins";
   font-size: 22px;
   color: #0355cc;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 .title-atendimento::after {
