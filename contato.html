@@ -382,6 +382,43 @@
 </script>
     </body>
     
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Captura os valores
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const telefone = document.getElementById("telefone").value;
+            const mensagem = document.getElementById("mensagem").value;
+
+            // Seu número do WhatsApp
+            const numero = "5522997994770";
+
+            // Mensagem formatada
+            const texto =
+                `Olá! Vim pelo site.
     
+    📌 Nome: ${nome}
+    📧 E-mail: ${email}
+    📱 Telefone: ${telefone}
+    
+    📝 Mensagem:
+    ${mensagem}`;
+
+            // Link do WhatsApp
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+            // Abre WhatsApp
+            window.open(url, "_blank");
+
+            // Mensagem visual opcional
+            document.getElementById("formMessage").innerHTML =
+                "<span class='text-success'>Redirecionando para o WhatsApp...</span>";
+
+            // Limpa formulário
+            document.getElementById("contactForm").reset();
+        });
+            </script>
     
     </html>

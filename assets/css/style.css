@@ -1181,7 +1181,7 @@ footer {
 */
 
 .form-control:focus {
-  border-color: 2px #1f4e79 !important;
+  border: 2px #1f4e79 !important;
   box-shadow: 0 0 5px rgba(31, 78, 121, 0.3) !important;
 }
 
