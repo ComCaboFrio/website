@@ -60,8 +60,8 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-        
+
+
     <!-- CDN git-->
     <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 
@@ -72,73 +72,71 @@
 
 <body>
 
-    <!-- START MAIN -->
-    <main class="site-content">
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg px-4">
 
-        <!-- NAVBAR SECTION -->
-        <nav class="navbar navbar-expand-lg px-4">
+        <!--NAV BRAND-->
+        <a class="navbar-brand" href="index.html" target="_blank">
+            <img src="img/logo_06.png" alt="ComCaboFrio">
+        </a>
 
-                <!--NAV BRAND-->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo_06.png" alt="Logo Marca ComCaboFrio">
-                </a>
+        <!--NAV TOGGLER-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <!--NAV TOGGLER-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!--NAV MENU-->
+        <div class="collapse navbar-collapse" id="menu">
 
-            <!--NAV MENU-->
-            <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
 
-                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Profissionais</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turismo.html">Turismo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dicas.html">Dicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servicos.html">Profissionais</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="turismo.html">Turismo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="dicas.html">Dicas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
-                    
-                </ul>
-            </div>
+            </ul>
+        </div>
 
-        </nav>
+    </nav>
 
+    <main>
         <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-container">
-        
+
                 <!-- TEXTO PRINCIPAL -->
                 <div class="hero-text">
                     <h1>Encontre serviços confiáveis em Cabo Frio sem perder tempo</h1>
-        
+
                     <p>
                         Eletricistas, diaristas, encanadores e muito mais.
                         Profissionais prontos para te atender perto de você.
                     </p>
-        
+
                     <!-- BOTÕES -->
                     <div class="hero-buttons">
-                        <a href="#servicos" class="btn-primary">Quero um profissional</a>
-                        <a href="#como-funciona" class="btn-secondary">Como funciona</a>
+                        <a href="#servicos" target="_blank" class="btn-primary">Quero um profissional</a>
+                        <a href="#como-funciona" target="_blank" class="btn-secondary">Como funciona</a>
                     </div>
-                </div>
-        
+                    </div>
+
             </div>
-        </section>
+            </section>
 
         <div class="divisor"></div>
 
@@ -146,8 +144,7 @@
         <section class="carousel-section">
             <div class="carousel-container-fluid">
 
-                <div id="carouselExampleDark" class="carousel slide carousel-fade carousel-inner"
-                    data-bs-ride="carousel">
+                <div id="carouselExampleDark" class="carousel slide carousel-fade carousel-inner" data-bs-ride="carousel">
 
                     <!--Image carowsel-->
                     <div class="carousel-inner">
@@ -171,7 +168,7 @@
                                 <a href="https://youtu.be/XgTBktQ8ZHA?si=iPhnhOPh_fSDjXop" class="main-btn">SAIBA
                                     MAIS</a>
                             </div>
-                        </div>
+                            </div>
 
                         <div class="carousel-item" data-bs-interval="3000">
                             <img src="img/banner3.png" class="d-block w-100" alt="Loja de Material Elétrica">
@@ -186,125 +183,125 @@
                     </div>
 
                     <!--Control Setas-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-prev" type="button" target="_blank" data-bs-target="#carouselExampleDark"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-next" type="button" target="_blank" data-bs-target="#carouselExampleDark"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
 
                 </div>
-            </div>
-        </section>
+                </div>
+                </section>
 
         <div class="divisor"></div>
-        
+
         <!-- CARDS PROFISSIONAIS DESTAQUE -->
         <section class="cards-list">
 
             <div class="cards-container swiper">
-            <div class="slider-wrapper">
-            
+                <div class="slider-wrapper">
+
                     <div class="col-12">
                         <h3 class="main-title">Profissionais em destaque</h3>
                     </div>
-            
-                    
+
+
                     <div class="card-list swiper-wrapper">
 
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Nutricionista" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Nutricionista" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
-                                </div>
-                        <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Eletricista" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
-                                <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Cientista de Dados" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Eletricista" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Advogado" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Cientista de Dados" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Engenheiro" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Advogado" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Arquiteto" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Engenheiro" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Designer Gráfico" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Arquiteto" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Dentista" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Designer Gráfico" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
-                    
+
                         <div class="card-item swiper-slide">
-                        <img src="img/proj6.jpg" alt="Pintor" class="user-image">
-                        <h2 class="user-name">Cintia Pontes</h2>
-                        <p class="user-profession">Nutricionista</p>
-                            <a href="https://wa.me/5522999999999" class="whatsapp-icon">
+                            <img src="img/proj6.jpg" alt="Dentista" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
                                 <i class="fa-brands fa-whatsapp"></i></a>
-                                <p class="whatsapp-contato">Contato via WhatsApp</p>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="img/proj6.jpg" alt="Pintor" class="user-image">
+                            <h2 class="user-name">Cintia Pontes</h2>
+                            <p class="user-profession">Nutricionista</p>
+                            <a href="https://wa.me/5522999999999" target="_blank" class="whatsapp-icon">
+                                <i class="fa-brands fa-whatsapp"></i></a>
+                            <p class="whatsapp-contato">Contato via WhatsApp</p>
                         </div>
 
 
                     </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
-                </div>
-        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                    </section>
 
         <!-- INFO SERVIÇOS -->
         <section class="info-content">
@@ -319,7 +316,7 @@
 
                         <div class="col-md-6 sobre">
                             <img class="img-fluid" src="img/ComCaboFrio_01.png" alt="Texto sobre a plataforma de serviços em Cabo Frio">
-                        </div>
+                            </div>
 
                         <div class="col-md-6 mt-4 mt-md-0">
                             <h3 class="about-title">Conectando prestadores de serviços e clientes
@@ -341,11 +338,11 @@
                                 </li>
 
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </section>
 
         <!-- CARDS SERVIÇOS EM DESTAQUE -->
         <section class="service_section-flex">
@@ -371,7 +368,7 @@
                     <h3 class="service_title">Infraestrutura e Logística</h3>
                     <p class="server">Transporte e Entregas, Telecomunicações e Manutenção</p>
                 </div>
-                
+
                 <div class="card_service">
                     <h3 class="service_title">Apoio Administrativo e Terceirização</h3>
                     <p class="server">Segurança e Limpeza, Recursos Humanos e Marketing.</p>
@@ -406,8 +403,8 @@
                         <p class="comentario">
                             “Serviço rápido, organizado e muito bem executado.”
                         </p>
-                    </div>
-                </a>
+                        </div>
+                        </a>
 
                 <!-- CARD 2 -->
                 <a href="#" class="card">
@@ -428,8 +425,8 @@
                         <p class="comentario">
                             “Atendimento humanizado e acolhedor.”
                         </p>
-                    </div>
-                </a>
+                        </div>
+                        </a>
 
                 <!-- CARD 3 -->
                 <a href="#" class="card">
@@ -450,8 +447,8 @@
                         <p class="comentario">
                             “Muito profissional e dedicado.”
                         </p>
-                    </div>
-                </a>
+                        </div>
+                        </a>
 
                 <!-- CARD 4 -->
                 <a href="#" class="card">
@@ -472,14 +469,14 @@
                         <p class="comentario">
                             “Alimentação saudável e equilibrada.”
                         </p>
-                    </div>
-                </a>
-            </div>
+                        </div>
+                        </a>
+                        </div>
 
             <p class="info-avaliacoes">
                 Avaliações coletadas durante a fase inicial da plataforma.
             </p>
-        </section>
+            </section>
 
         <!-- INFO ATENDIMENTO -->
         <section class="atendimento-section">
@@ -526,25 +523,25 @@
                                 <strong>Constrói reputação:</strong>
                                 um profissional é lembrado também pelo seu trato, não só pela técnica.
                                 <i class="fas fa-check"></i>
-                            </li>
-                            <li>
-                                <strong> Garante indicações:</strong> quem é bem
-                                atendido recomenda espontaneamente.
-                                <i class="fas fa-check"></i>
-                            </li>
-                            <li>
-                                <strong>Humaniza o serviço:</strong> em tempos de
-                                automatização, o toque humano faz toda a diferença.
-                                <i class="fas fa-check"></i>
-                            </li>
-                            <li>
-                                <strong>Fideliza clientes:</strong> um bom
-                                atendimento conquista e mantém clientes satisfeitos.
-                                <i class="fas fa-check"></i>
-                            </li>
+                                </li>
+                                <li>
+                                    <strong> Garante indicações:</strong> quem é bem
+                                    atendido recomenda espontaneamente.
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li>
+                                    <strong>Humaniza o serviço:</strong> em tempos de
+                                    automatização, o toque humano faz toda a diferença.
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li>
+                                    <strong>Fideliza clientes:</strong> um bom
+                                    atendimento conquista e mantém clientes satisfeitos.
+                                    <i class="fas fa-check"></i>
+                                </li>
 
                         </ul>
-                    </div>
+                        </div>
 
                     <div class=" col-md-6 ">
                         <img class="img-atendimento img-fluid" src="img/atend.jpeg"
@@ -564,129 +561,135 @@
                         organizada para a cidade,
                         com baixo custo e possibilidade de expansão futura.
                         É uma solução simples, moderna e alinhada com o desenvolvimento econômico local. <img
-                            src="img/close_aspas_azul.png" alt="Close quotation mark graphic concluding the quote about ComCaboFrio" class="quote-icon">
+                            src="img/close_aspas_azul.png" alt="Close quotation mark graphic concluding the quote about ComCaboFrio"
+                            class="quote-icon">
                     </em>
                 </p>
+                </div>
+
+        </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer id="footer-section" class="footer_section">
+
+        <section class="footer_top">
+            <div class="footer-container">
+
+                <div class="footer-title">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <a class="footer_title" href="index.html" rel="noopener">ComCaboFrio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+
+                    <div class="box-contact">
+                        <div class="row box_contact">
+
+                            <div class="col-md-6">
+                                <div class="box_first">
+                                    <a class="box_number" href="https://wa.me/5522997994770" target="_blank"
+                                        rel="noopener" aria-label="WhatsApp" title="Fale conosco pelo WhatsApp">
+                                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+                                    </a>
+                                    <div class="number_box">22 99799-4770</div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="box_second">
+                                    <a class="box_email" href="mailto:cntato@cabofrio.cm.br" target="_blank"
+                                        rel="noopener" aria-label="Email" title="Fale conosco pelo email">
+                                        <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                                    </a>
+                                    <p class="email_box">contato@comcabofrio.com.br</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <p class="social_title">Siga-nos</p>
+
+                                <div class="social_box text-center pb-2">
+                                    <a class="links_box" href="#" target="_blank" rel="noopener" title="Facebook">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="links_box" href="#" target="_blank" rel="noopener" title="Twitter">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="links_box" href="#" target="_blank" rel="noopener" title="YouTube">
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="links_box" href="#" target="_blank" rel="noopener" title="instagram">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <section class="footer-bottom">
+
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="bottom_first">
+                        <h4 class="first_botton">Projeto desenvolvido por |</h4><a class="instagram-link"
+                            href="https://www.instagram.com/tatianeamorim.cf?utm_source=qr&igsh=ODNoaTVrdnRyNHEz"
+                            target="_blank" rel="noopener">Tatiane
+                            Amorim</a>
+
+                        <p class="first_botton">Colaboração | Carlos Lima</p>
+                    </h4>
+
+                    <h6 class="bootom_second">
+                        &copy; <span id="displayDateYear"></span> Todos os direitos reservados |
+                        <a class="bottom_title" href="index.html">ComCaboFrio</a>
+
+                    </h6>
+                </div>
             </div>
 
         </section>
 
-        <!--FOOTER-->
-        <footer id="footer-section" class="footer_section">
-        
-            <section class="footer_top">
-                <div class="footer-container">
-        
-                    <div class="footer-title">
-                        <div class="row">
-        
-                            <div class="col-12 text-center">
-                                <a class="footer_title" href="index.html" rel="noopener">ComCaboFrio</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="footer-contact">
-        
-                        <div class="box-contact">
-                            <div class="row box_contact">
-        
-                                <div class="col-md-6">
-                                    <div class="box_first">
-                                        <a class="box_number" href="https://wa.me/5522997994770" target="_blank" rel="noopener" aria-label="WhatsApp"
-                                            title="Fale conosco pelo WhatsApp">
-                                            <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
-                                        </a>
-                                        <div class="number_box">22 99799-4770</div>
-        
-                                    </div>
-                                </div>
-        
-                                <div class="col-md-6">
-                                    <div class="box_second">
-        
-                                        <a class="box_email" href="mailto:cntato@cabofrio.cm.br" target="_blank" rel="noopener" aria-label="Email"
-                                            title="Fale conosco pelo email">
-                                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                                        </a>
-                                        <p class="email_box">contato@comcabofrio.com.br</p>
-        
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="social-contact">
-                            <div class="row">
-        
-                                <div class="col-12">
-                                    <p class="social_title">Siga-nos</p>
-        
-                                    <div class="social_box text-center pb-2">
-                                        <a class="links_box" href="#" target="_blank" rel="noopener" title="Facebook">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="links_box" href="#" target="_blank" rel="noopener" title="Twitter">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="links_box" href="#" target="_blank" rel="noopener" title="YouTube">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="links_box" href="#" target="_blank" rel="noopener" title="instagram">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-            </section>
-            <br>
-            <section class="footer-bottom">
-        
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="bottom_first">
-                            <h4 class="first_botton">Projeto desenvolvido por |</h4><a class="instagram-link"
-                                    href="https://www.instagram.com/tatianeamorim.cf?utm_source=qr&igsh=ODNoaTVrdnRyNHEz" target="_blank"
-                                    rel="noopener">Tatiane
-                                    Amorim</a>
-                                    
-                                    <p class="first_botton">Colaboração | Carlos Lima</p>
-                        </h4>
+    </footer>
 
-                        <h6 class="bootom_second">
-                            &copy; <span id="displayDateYear"></span> Todos os direitos reservados |
-                            <a class="bottom_title" href="index.html">ComCaboFrio</a>
-                        
-                        </h6>
-                        </div>
-                </div>
-                
-            </section>
-        
-        </footer>
+    <h6 class="bootom_second">
+        &copy; <span id="displayDateYear"></span> Todos os direitos reservados |
+        <a class="bottom_title" href="index.html">ComCaboFrio</a>
 
-    </main>
+    </h6>
 
     <!--JQUERY EFEITOS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <!--JQUERY UI-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    
+
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!--OWL CAROUSEL-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    
+
     <!--Swuiper JS-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
     <!--OS-->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
@@ -695,25 +698,24 @@
             once: true
         });
     </script>
-    
+
     <!--PROGRESS BAR-->
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
     <!--PARALAX-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    
+
     <!--POPPERS JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    
+
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/cf8e11c53f.js" crossorigin="anonymous"></script>
-    
+
     <!--MEU SCRIPTS JS-->
     <script src="assets/js/scripts.js"></script>
-    
+
     <!-- NAVBAR CLOSE MOBILE -->
-    
     <script id="nav-close-mobile">
         document.querySelectorAll('.nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
@@ -725,7 +727,8 @@
             });
         });
     </script>
-    
+
+    <!--form validation-->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('contactForm');
@@ -777,8 +780,45 @@
                 });
             }
         });
-                    </script>
+    </script>
 
 </body>
-        
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Captura os valores
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const telefone = document.getElementById("telefone").value;
+        const mensagem = document.getElementById("mensagem").value;
+
+        // Seu número do WhatsApp
+        const numero = "5522997994770";
+
+        // Mensagem formatada
+        const texto =
+            `Olá! Vim pelo site.
+
+📌 Nome: ${nome}
+📧 E-mail: ${email}
+📱 Telefone: ${telefone}
+
+📝 Mensagem:
+${mensagem}`;
+
+        // Link do WhatsApp
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+        // Abre WhatsApp
+        window.open(url, "_blank");
+
+        // Mensagem visual opcional
+        document.getElementById("formMessage").innerHTML =
+            "<span class='text-success'>Redirecionando para o WhatsApp...</span>";
+
+        // Limpa formulário
+        document.getElementById("contactForm").reset();
+    });
+</script>
 </html>
