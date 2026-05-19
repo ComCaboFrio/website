@@ -688,7 +688,6 @@
         <script src="assets/js/scripts.js"></script>
         
         <!-- NAVBAR CLOSE MOBILE -->
-        
         <script id="nav-close-mobile">
             document.querySelectorAll('.nav-link').forEach(function (link) {
                 link.addEventListener('click', function () {
@@ -701,38 +700,7 @@
             });
         </script>
         
-        <script>
 
-    document.getElementById("formContato")
-        .addEventListener("submit", function (e) {
-
-            e.preventDefault();
-
-            let nome = document.getElementById("nome").value;
-            let email = document.getElementById("email").value;
-            let telefone = document.getElementById("telefone").value;
-            let mensagem = document.getElementById("mensagem").value;
-
-            let texto = `
-            NOVO CONTATO DO SITE
-            Nome:
-            ${nome}
-            E-mail: 
-            ${email}
-            Telefone: 
-            ${telefone}
-            Mensagem: 
-            ${mensagem}`;
-
-            let url = `https://api.callmebot.com/call.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
-
-            fetch(url)
-                .then(response => alert("Mensagem enviada com sucesso!"))
-                .catch(error => alert("Erro ao enviar"));
-
-        });
-
-</script>
 <!--  <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const form = document.getElementById('contactForm');
@@ -787,6 +755,7 @@
                         </script> -->
     
     </body>
+
     <script>
         document.getElementById("contactForm").addEventListener("submit", function (e) {
             e.preventDefault();
@@ -814,12 +783,12 @@
             // Link do WhatsApp
             const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-            // Abre WhatsApp
-            window.open(url, "_blank");
+            /*       // Abre WhatsApp
+                  window.open(url, "_blank"); */
 
-            // Mensagem visual opcional
+            /* // Mensagem visual opcional
             document.getElementById("formMessage").innerHTML =
-                "<span class='text-success'>Redirecionando para o WhatsApp...</span>";
+                "<span class='text-success'>Redirecionando para o WhatsApp...</span>"; */
 
             // Limpa formulário
             document.getElementById("contactForm").reset();

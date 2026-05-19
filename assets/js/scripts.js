@@ -56,3 +56,29 @@ $(".owl-carousel").owlCarousel({
         }
     }
 });
+
+const nome = document.getElementById("nome").value;
+const email = document.getElementById("email").value;
+const telefone = document.getElementById("telefone").value;
+const mensagem = document.getElementById("mensagem").value;
+
+const texto = `
+Novo cadastro no site
+
+Nome: ${nome}
+Email: ${email}
+Telefone: ${telefone}
+
+Mensagem:
+${mensagem}
+`;
+
+const url = `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
+
+fetch(url)
+.then(response => {
+    alert("Mensagem enviada com sucesso!");
+})
+.catch(error => {
+    alert("Erro ao enviar.");
+});
