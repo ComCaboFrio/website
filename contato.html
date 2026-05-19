@@ -79,10 +79,10 @@
             <!-- NAVBAR -->
             <nav class="navbar navbar-expand-lg px-4">
 
-        <!--NAV BRAND-->
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo_06.png" alt="ComCaboFrio">
-        </a>
+                <!--NAV BRAND-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo_06.png" alt="ComCaboFrio">
+                </a>
 
                 <!--NAV TOGGLER-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -293,6 +293,7 @@
         
         <!--PROGRESS BAR-->
         <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+
         <!--PARALAX-->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         
@@ -308,7 +309,6 @@
         <script src="assets/js/scripts.js"></script>
         
         <!-- NAVBAR CLOSE MOBILE -->
-        
         <script id="nav-close-mobile">
             document.querySelectorAll('.nav-link').forEach(function (link) {
                 link.addEventListener('click', function () {
@@ -321,6 +321,7 @@
             });
         </script>
         
+        <!-- PARÂMETROS DO FORMULÁRIO -->
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const form = document.getElementById('contactForm');
@@ -372,46 +373,41 @@
                     });
                 }
             });
-                        </script>
+</script>
     </body>
     
-<script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
+    <script>
 
-        // Captura os valores
-        const nome = document.getElementById("nome").value;
-        const email = document.getElementById("email").value;
-        const telefone = document.getElementById("telefone").value;
-        const mensagem = document.getElementById("mensagem").value;
+            document.getElementById("formContato")
+                .addEventListener("submit", function (e) {
 
-        // Seu número do WhatsApp
-        const numero = "5522997994770";
+                e.preventDefault();
 
-        // Mensagem formatada
-        const texto =
-            `Olá! Vim pelo site.
+                let nome = document.getElementById("nome").value;
+                let email = document.getElementById("email").value;
+                let telefone = document.getElementById("telefone").value;
+                let mensagem = document.getElementById("mensagem").value;
 
-                    Nome: ${nome}
-                    E-mail: ${email}
-                    Telefone: ${telefone}
-        
-                    Mensagem:
-                ${mensagem}`;
+                let texto = `
+        NOVO CONTATO DO SITE
+        Nome:
+        ${nome}
+        E-mail: 
+        ${email}
+        Telefone: 
+        ${telefone}
+        Mensagem: 
+        ${mensagem}`;
 
-        // Link do WhatsApp
-        const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                let url = `https://api.callmebot.com/call.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
-        // Abre WhatsApp
-        window.open(url, "_blank");
+                fetch(url)
+                    .then(response => alert("Mensagem enviada com sucesso!"))
+                    .catch(error => alert("Erro ao enviar"));
 
-        // Mensagem visual opcional
-        document.getElementById("formMessage").innerHTML =
-            "<span class='text-success'>Redirecionando para o WhatsApp...</span>";
+            });
 
-        // Limpa formulário
-        document.getElementById("contactForm").reset();
-    });
 </script>
+
     
 </html>
