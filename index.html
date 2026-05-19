@@ -702,59 +702,6 @@
         </script>
         
 
-<!--  <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const form = document.getElementById('contactForm');
-                const formMessage = document.getElementById('formMessage');
-
-                if (form) {
-                    form.addEventListener('submit', function (e) {
-                        e.preventDefault();
-
-                        const nome = document.getElementById('nome').value.trim();
-                        const email = document.getElementById('email').value.trim();
-                        const telefone = document.getElementById('telefone').value.trim();
-                        const mensagem = document.getElementById('mensagem').value.trim();
-
-                        const nomeRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                        const telefoneRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
-
-                        if (!nome || !email || !telefone || !mensagem) {
-                            formMessage.innerHTML = '<div class="alert alert-danger">Por favor, preencha todos os campos obrigatórios!</div>';
-                            return;
-                        }
-
-                        if (!nomeRegex.test(nome)) {
-                            formMessage.innerHTML = '<div class="alert alert-danger">Nome inválido. Use apenas letras.</div>';
-                            return;
-                        }
-
-                        if (!emailRegex.test(email)) {
-                            formMessage.innerHTML = '<div class="alert alert-danger">E-mail inválido.</div>';
-                            return;
-                        }
-
-                        if (!telefoneRegex.test(telefone)) {
-                            formMessage.innerHTML = '<div class="alert alert-danger">Telefone inválido. Use o formato (XX) XXXXX-XXXX.</div>';
-                            return;
-                        }
-
-                        if (mensagem.length < 10) {
-                            formMessage.innerHTML = '<div class="alert alert-danger">A mensagem deve conter pelo menos 10 caracteres.</div>';
-                            return;
-                        } formMessage.innerHTML = `<div class="alert alert-success">Obrigado, ${nome}! Sua mensagem foi enviada
-                                    com sucesso.</div>`;
-                        form.reset();
-
-                        setTimeout(() => {
-                            formMessage.innerHTML = '';
-                        }, 5000);
-                    });
-                }
-            });
-                        </script> -->
-    
     </body>
 
 
