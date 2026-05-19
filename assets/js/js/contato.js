@@ -25,7 +25,10 @@ ${mensagem}
     .then(response => {
         alert("Mensagem enviada com sucesso!");
         document.getElementById("contactForm").reset();
+    })
+    .catch(error => {
+        alert("Erro ao enviar.");
     });
 
 });
-
+<script src="assets/js/contato.js"></script>
