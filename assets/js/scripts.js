@@ -3,7 +3,7 @@ const swiper = new Swiper('.slider-wrapper', {
     grabCursor: true,
     spaceBetween: 20,
     loop: true,
-    
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -15,7 +15,6 @@ const swiper = new Swiper('.slider-wrapper', {
         prevEl: '.swiper-button-prev',
     },
 
-    //Responsive Breakpoints//
     breakpoints: {
         0: {
             slidesPerView: 1
@@ -55,30 +54,4 @@ $(".owl-carousel").owlCarousel({
             items: 2
         }
     }
-});
-
-const nome = document.getElementById("nome").value;
-const email = document.getElementById("email").value;
-const telefone = document.getElementById("telefone").value;
-const mensagem = document.getElementById("mensagem").value;
-
-const texto = `
-Novo cadastro no site
-
-Nome: ${nome}
-Email: ${email}
-Telefone: ${telefone}
-
-Mensagem:
-${mensagem}
-`;
-
-const url = `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
-
-fetch(url)
-.then(response => {
-    alert("Mensagem enviada com sucesso!");
-})
-.catch(error => {
-    alert("Erro ao enviar.");
 });
