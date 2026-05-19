@@ -724,7 +724,7 @@
             📝 Mensagem: 
             ${mensagem}`;
 
-            let url = `https://api.callmebot.com/call.php?phone=5522997994770&text=This+is+a+test&apikey=1395824`;
+            let url = `https://api.callmebot.com/call.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
             fetch(url)
                 .then(response => alert("Mensagem enviada com sucesso!"))
