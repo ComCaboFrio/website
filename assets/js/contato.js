@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!form) return;
 
   form.addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
@@ -15,10 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const formMessage = document.getElementById("formMessage");
     const btn = form.querySelector("button");
 
-    // VALIDAÇÃO BÁSICA
+    // VALIDAÇÃO
     if (!nome || !email || !telefone || !mensagem) {
+
       formMessage.innerHTML =
-        `<div class="alert alert-danger">Por favor, preencha todos os campos!</div>`;
+        `<div class="alert alert-danger">
+          Por favor, preencha todos os campos!
+        </div>`;
+
       return;
     }
 
@@ -26,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.disabled = true;
     btn.innerText = "Enviando...";
 
-    // MENSAGEM WHATSAPP
+    // TEXTO WHATSAPP
     const texto =
 `📩 Novo contato:
 👤 Nome: ${nome}
@@ -34,34 +39,33 @@ document.addEventListener("DOMContentLoaded", function () {
 📞 Telefone: ${telefone}
 💬 Mensagem: ${mensagem}`;
 
-    // CALLMEBOT
-    const url = `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
+    // URL CALLMEBOT
+    const url =
+`https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
+    // ABRE WHATSAPP
     window.open(url, "_blank");
 
-    // FEEDBACK NA TELA
+    // FEEDBACK
     formMessage.innerHTML =
-      `<div class="alert alert-success">Mensagem enviada com sucesso!</div>`;
+      `<div class="alert alert-success">
+        Mensagem enviada com sucesso!
+      </div>`;
 
-    // RESET FORM
+    // LIMPA FORMULÁRIO
     form.reset();
 
-    // REABILITA BOTÃO
+    // REATIVA BOTÃO
     btn.disabled = false;
     btn.innerText = "Enviar";
 
-    // LIMPA MENSAGEM
+    // REMOVE MENSAGEM
     setTimeout(() => {
+
       formMessage.innerHTML = "";
+
     }, 5000);
 
   });
 
 });
-
-if (btn) {
-  btn.disabled = true;
-  btn.innerText = "Enviando...";
-}
-
-window.open(url, "_blank");
