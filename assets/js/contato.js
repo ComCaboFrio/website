@@ -16,20 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const formMessage = document.getElementById("formMessage");
     const btn = form.querySelector("button");
 
-
-    /*
-    // VALIDAÇÃO
-    if (!nome || !email || !telefone || !mensagem) {
+    
+    // VALIDAR NOME
+    if (nome.length < 3) {
 
       formMessage.innerHTML =
         `<div class="alert alert-danger">
-          Por favor, preencha todos os campos!
+          Digite seu nome completo.
         </div>`;
-
       return;
     }
-    */
-    
+
     // VALIDAR E-MAIL
     const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -71,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // BLOQUEIA BOTÃO
     btn.disabled = true;
-    btn.innerText = "Enviando...";
+    btn.innerHTML = "Enviando...";
 
     // TEXTO WHATSAPP
     const texto =
 `📩 Novo contato:
 👤 Nome: ${nome}
 📧 Email: ${email}
-📞 Telefone: ${telefone}
+📞 Telefone: ${telefoneLimpo}
 💬 Mensagem: ${mensagem}`;
 
     // URL CALLMEBOT
