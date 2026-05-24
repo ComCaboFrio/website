@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
     // ABRE WHATSAPP
-   /* window.open(url, "_blank"); */
+    window.location.href = url;
 
     // FEEDBACK
     formMessage.innerHTML =
