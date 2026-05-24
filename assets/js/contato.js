@@ -16,12 +16,54 @@ document.addEventListener("DOMContentLoaded", function () {
     const formMessage = document.getElementById("formMessage");
     const btn = form.querySelector("button");
 
+
+    /*
     // VALIDAÇÃO
     if (!nome || !email || !telefone || !mensagem) {
 
       formMessage.innerHTML =
         `<div class="alert alert-danger">
           Por favor, preencha todos os campos!
+        </div>`;
+
+      return;
+    }
+    */
+    
+    // VALIDAR E-MAIL
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailValido.test(email)) {
+
+      formMessage.innerHTML =
+        `<div class="alert alert-danger">
+          Digite um e-mail válido.
+        </div>`;
+
+      return;
+    }
+
+    // VALIDAR TELEFONE
+    const telefoneLimpo = telefone.replace(/\D/g, "");
+
+    if (telefoneLimpo.length < 10 || telefoneLimpo.length > 11) {
+
+      formMessage.innerHTML =
+        `<div class="alert alert-danger">
+          Digite um telefone válido com DDD.
+        </div>`;
+
+      return;
+    }
+
+    // VALIDAR MENSAGEM
+    const palavrasMensagem = mensagem.trim().split(/\s+/);
+
+    if (palavrasMensagem.length < 10) {
+
+      formMessage.innerHTML =
+        `<div class="alert alert-danger">
+          A mensagem deve ter pelo menos 10 palavras.
         </div>`;
 
       return;
@@ -53,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // FEEDBACK
         formMessage.innerHTML =
           `<div class="alert alert-success">
-        Mensagem enviada com sucesso!
+          ${nome}, sua mensagem foi enviada com sucesso!
       </div>`;
 
         // LIMPA FORMULÁRIO
