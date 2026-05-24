@@ -44,9 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
 `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
     //ENVIA SEM ABRIR PÁGINA
-    fetch(url)
-      .then(response => response.text())
-      .then(data => {
+    fetch(url, {
+      method: "GET",
+      mode: "no-cors"
+    })
+    .then(()=> {
 
         // FEEDBACK
         formMessage.innerHTML =
@@ -56,7 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // LIMPA FORMULÁRIO
         form.reset();
-      })
+  })
+  
       .catch(error => { 
         formMessage.innerHTML =
           `<div class="alert alert-danger">
