@@ -43,8 +43,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const url =
 `https://api.callmebot.com/whatsapp.php?phone=5522997994770&text=${encodeURIComponent(texto)}&apikey=1395824`;
 
-    // ABRE WHATSAPP
-    window.location.href = url;
+   /*// ABRE WHATSAPP
+    window.location.href = url;*/
+    window.open(url, "_blank");
+
+    //ENVIA SEM ABRIR PÁGINA
+    fetch(url)
+      .then(response => response.text())
 
     // FEEDBACK
     formMessage.innerHTML =
