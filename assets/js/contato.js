@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // VALIDAR MENSAGEM
     const palavrasMensagem = mensagem.trim().split(/\s+/);
 
-    if (palavrasMensagem.length < 10) {
+    if (palavrasMensagem.length < 5) {
 
       formMessage.innerHTML =
         `<div class="alert alert-danger">
-          A mensagem deve ter pelo menos 10 palavras.
+          A mensagem deve ter pelo menos 5 palavras.
         </div>`;
 
       return;
