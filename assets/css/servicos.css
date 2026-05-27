@@ -1,0 +1,20 @@
+.cards_servicos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.card_servicos {
+        background-color: #95caff;
+        border-radius: 15px;
+        padding: 20px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
