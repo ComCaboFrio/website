@@ -1,20 +1,128 @@
-.cards_servicos {
+/* .cards_servicos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+    grid-template-columns: repeat(4, 1fr); 
+    (4  cards por linha )
     gap: 20px;
     padding: 20px;
     background-color: #ffffff;
+} 
+*/
+
+/* ===== ÁREA DOS CARDS ===== */
+.navbar-azul {
+    background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
-.card_servicos {
-        background-color: #95caff;
-        border-radius: 15px;
-        padding: 20px;
-        height: 160px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: 0.3s;
+
+.hero_section {
+    background: linear-gradient(135deg, #0f2a44, #1f4e79);
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.hero_section h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.hero_section    p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+.cards_servicos {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+/* ===== CARD ===== */
+
+.servicos_card {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* EFEITO HOVER */
+
+.servicos_card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== IMAGEM ===== */
+
+.servicos_card img {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ===== TEXTO ===== */
+
+.card-body {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+
+    color: #222;
+}
+
+.card-text {
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    flex-grow: 1;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px) {
+
+    .cards_servicos {
+        padding: 20px 15px;
+        gap: 20px;
     }
 
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+}
