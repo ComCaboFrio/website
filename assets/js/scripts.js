@@ -1,4 +1,4 @@
-const swiper = new Swiper('.slider-wrapper', {
+/* const swiper = new Swiper('.slider-wrapper', {
     slidesPerView: "auto",
     grabCursor: true,
     spaceBetween: 20,
@@ -30,7 +30,7 @@ const swiper = new Swiper('.slider-wrapper', {
     }
 
 });
-
+ */
 //client section owl carousel
 $(".owl-carousel").owlCarousel({
     loop: true,
