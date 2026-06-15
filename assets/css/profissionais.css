@@ -133,7 +133,7 @@
     flex-grow: 1;
 }
 
-.card-title {
+.prof-title {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -142,7 +142,8 @@
     text-align: center;
 }
 
-.card-text {
+.prof-texto {
+    text-align: center;
     font-size: 0.95rem;
     line-height: 1.6;
     padding: 0 10px;

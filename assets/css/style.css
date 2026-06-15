@@ -151,7 +151,7 @@ body {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
   color: #fff;
   text-align: center;
-  padding: 80px 40px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -162,7 +162,9 @@ body {
 
 .hero p {
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  color: #ffffff;
 }
 
 .hero-buttons a {
@@ -226,22 +228,48 @@ body {
 }
 
 #carouselExampleDark .carousel-caption {
-  top: 25%;
+  bottom: 20%;
+  top: auto;
+  transform: none;
+  text-align: center;
 }
 
 #carouselExampleDark .carousel-caption h2 {
-  font-size: 50px;
+  font-size: 32px;
   color: #fff;
 }
 
 #carouselExampleDark .carousel-caption p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
+.main__btn {
+display: inline-block;
+margin-top: 10px;
+padding: 8px 16px;
+font-size: 14px;
+border-radius: 30px;
+border: 2px solid #fff;
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+transition: 0.4s;
+}
+
+.main__btn:hover {
+  font-family: "Poppins";
+  text-decoration: none;
+  color: #007BFF;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px #f9f9f9 inset;
+}
+
+
 .main-btn {
+
   background-color: transparent;
   text-decoration: none;
   font-family: "Poppins";
@@ -263,11 +291,11 @@ body {
   box-shadow: 0px 0px 10px #f9f9f9 inset;
 }
 
-#carouselExampleDark .carousel-indicators button {
+#carouselExampleDark .carousel-intors button {
   background-color: #fff;
 }
 
-#carouselExampleDark .carousel-indicators .active {
+#carouselExampleDark .carousel-intors .active {
   color: #0f2a44;
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
@@ -367,6 +395,26 @@ body {
   color: #24252a;
 }
 
+.buttom-destaque {
+    width: 60%;
+    margin: 5px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #0f2a44, #1f4e79);
+    border-radius: 6px;
+    color: #fff;
+   
+}
+
+.buttom-destaque:hover {
+  text-decoration: none;
+    color: #007BFF;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px #f9f9f9 inset;
+}
+
+/* 
 .whatsapp-icon {
   display: flex;
   align-items: center;
@@ -397,7 +445,7 @@ body {
   font-size: 10px;
   color: #24252a;
   font-weight: 400;
-}
+} */
 
 .swiper-slide {
   width: auto;
@@ -408,7 +456,7 @@ body {
   display: flex;
   margin-top: 25px;
   padding-top: 25px;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 
 .swiper-slide-button::before,
@@ -1100,7 +1148,7 @@ footer {
 
 .card-title {
   font-weight: 700;
-  color: #0f2a44;
+  color: #2d440f;
 }
 
 .profissao {
@@ -1113,7 +1161,7 @@ footer {
   font-size: 14px;
 }
 
-.btn-whatsapp {
+/* .btn-whatsapp {
   display: inline-block;
   margin-top: 10px;
   background: #25D366;
@@ -1128,18 +1176,24 @@ footer {
   background: #1da851;
   color: white;
 }
-
+ */
 /*
 =====================
-    MENU DICAS
+    MENU DICA
 =====================
 */
+
 
 #dicas {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
-.dica {
+.section-dicas {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dicas-title {
   padding: 15px;
   text-align: center;
   font-size: 30px;
@@ -1148,7 +1202,7 @@ footer {
   color: #fff;
 }
 
-.lugares {
+.dicas-text {
   padding: 15px;
   text-align: center;
   font-size: 18px;
@@ -1156,6 +1210,7 @@ footer {
     sans-serif;
   color: #fff;
 }
+
 
 /*
 =====================
@@ -1167,12 +1222,12 @@ footer {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
 
-.secao {
+.section-sobre {
   padding: 60px 20px;
   text-align: center;
 }
 
-.projeto {
+.sobre-title {
   padding: 15px;
   text-align: center;
   font-size: 30px;
@@ -1181,7 +1236,7 @@ footer {
   color: #fff;
 }
 
-.sobre-projeto {
+.sobre-description {
   padding: 15px;
   text-align: center;
   font-size: 18px;
