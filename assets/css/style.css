@@ -353,7 +353,7 @@ body {
   -webkit-user-select: none;
   user-select: none;
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -1422,13 +1422,13 @@ footer {
 
   .swiper-button-prev {
     left: 15px;
-    color: #1f4e79;
+    color: #fff;
     /* Altera para a cor escura do seu tema para dar contraste sobre o fundo branco do card */
   }
 
   .swiper-button-next {
     right: 15px;
-    color: #1f4e79;
+    color: #fff;
   }
 
   /* Garante que a seta fique na frente de tudo no celular */
@@ -1442,4 +1442,43 @@ footer {
 main {
   padding-top: 60px !important;
   /* Ajuste este valor se precisar descer mais ou menos */
+}
+
+
+/* Ajustes específicos para o Swiper no Celular (telas até 768px) */
+@media (max-width: 768px) {
+
+  /* 1. Cria um corredor/espaço nas laterais do container para as setas não cobrirem o card */
+  .swiper {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  /* 2. Empurra a seta esquerda bem para o cantinho e muda para azul */
+  .swiper-button-prev {
+    left: 5px !important;
+    color: #fff !important;
+    /* Cor azul escuro da sua marca */
+  }
+
+  /* 3. Empurra a seta direita bem para o cantinho e muda para azul */
+  .swiper-button-next {
+    right: 5px !important;
+    color: #fff !important;
+    /* Cor azul escuro da sua marca */
+  }
+
+  /* 4. Aumenta o tamanho dos ícones das setas para facilitar o clique no celular */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 24px !important;
+    /* Tamanho perfeito para o dedão */
+    font-weight: bold;
+  }
+
+  /* 5. Ajusta o tamanho do card para ele ficar maior e imponente no centro */
+  .swiper-slide {
+    width: 100% !important;
+    /* Garante que ele use o espaço centralizado disponível */
+  }
 }
