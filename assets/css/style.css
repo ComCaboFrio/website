@@ -433,7 +433,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   width: auto;
-  top: 50%;
+  top: 55%;
   /* Centraliza verticalmente em relação ao container pai */
   color: #fff;
   transform: translateY(-50%);
@@ -1369,7 +1369,7 @@ footer {
 /* ==========================================================================
    RESPONSIVIDADE DAS SETAS (COLE NO FIM DO SEU CSS)
    ========================================================================== */
-
+/* 
 /* 1. Telas de Notebook/Monitores Médios (Abaixo de 1220px) */
 @media (max-width: 1220px) {
   .swiper-external-wrapper {
@@ -1424,7 +1424,7 @@ footer {
     left: 15px;
     color: #fff;
     /* Altera para a cor escura do seu tema para dar contraste sobre o fundo branco do card */
-  }
+  } */
 
   .swiper-button-next {
     right: 15px;
