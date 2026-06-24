@@ -145,7 +145,7 @@ const swiper = new Swiper('.cards-container.swiper', {
 
   // Breakpoints para manter a responsividade que configuramos
   breakpoints: {
-    576: { slidesPerView: 1, spaceBetween: 10 },
+    576: { slidesPerView: 1, spaceBetween: 20 },
     768: { slidesPerView: 3, spaceBetween: 25 },
     1200: { slidesPerView: 4, spaceBetween: 30 }
   }
