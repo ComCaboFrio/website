@@ -125,11 +125,8 @@ const swiper = new Swiper('.cards-container.swiper', {
   autoplay: {
     delay: 3000,             // Tempo parado em cada card (ex: 3 segundos)
     disableOnInteraction: false, // O movimento NÃO morre se o usuário clicar nas setas
-    pauseOnMouseEnter: true,    // Opcional: pausa o movimento se o mouse estiver em cima do card
   },
   
-  // Se você usa o movimento fluido e contínuo (estilo esteira de aeroporto),
-  // as setas precisam de uma velocidade rápida para vencer o fluxo:
   speed: 600, // Tempo da transição ao clicar na seta (em milissegundos)
 
   // CONFIGURAÇÃO DAS SETAS (Verifique se as classes batem exatamente com o HTML)
@@ -146,7 +143,8 @@ const swiper = new Swiper('.cards-container.swiper', {
   // Breakpoints para manter a responsividade que configuramos
   breakpoints: {
     576: { slidesPerView: 1, spaceBetween: 20 },
-    768: { slidesPerView: 3, spaceBetween: 25 },
-    1200: { slidesPerView: 4, spaceBetween: 30 }
+    768: { slidesPerView: 2, spaceBetween: 25 },
+    1024: { slidesPerView: 3, spaceBetween: 25 },
+    1200: {slidesPerView: 4, spaceBetween: 30},
   }
 });

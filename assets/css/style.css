@@ -296,7 +296,6 @@ body {
 */
 
 .swiper {
-  overflow: hidden;
   /* Isso corta qualquer coisa que saia da caixa principal do slide */
   position: relative;
 
@@ -313,24 +312,16 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 60px 0;
-  overflow: hidden;
-  position: relative;
+
   
 }
 
 /*WRAPPER ESPAÇOENTRRE OS CARDS*/
 .swiper-wrapper {
-  align-items: stretch;
+  align-items: center;
   transition-timing-function: linear !important;
-    
-
 }
 
-/* .swiper-slide {
-  display: flex;
-  justify-content: center;
-}
- */
 /*TÌTULO DA SESSÂO*/
 .main-title {
   font-size: 40px;
@@ -419,12 +410,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  /* Um pouco maior que o swiper para dar espaço às setas */
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  margin: auto;  
 }
 
 
@@ -434,12 +420,10 @@ body {
 .swiper-button-next {
   width: auto;
   top: 55%;
-  /* Centraliza verticalmente em relação ao container pai */
   color: #fff;
   transform: translateY(-50%);
   z-index: 10;
-  position: absolute;
-  /* Alinha em relação à div .swiper-external-wrapper */
+  
 }
 
 /* Coloca a seta esquerda antes do início do corte dos cards */
@@ -451,8 +435,8 @@ body {
 .swiper-button-next {
   right: 10px;
 }
-.swiper-slide-button::after,
-.swiper-slide-button::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: 30px;
 }
 
@@ -461,10 +445,11 @@ body {
   opacity: 0.7;
 }
 
-/*=================================          
-SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO
-==================================
+/*========================================          
+  SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO
+  ========================================
 */
+
 #about-area {
 margin: 25px;
 }
@@ -538,9 +523,9 @@ margin: 25px;
 }
 
 /*
-==========================                     
+===========================                     
     SERVIÇOS EM DESTAQUE
-==========================
+===========================
 */
 .service_section-flex {
   display: flex;
@@ -723,10 +708,11 @@ margin: 25px;
   }
 }
 
+
 /*
-======================================                
-VALORIZAMOS O ATENDIMENTO DE QUALIDADE
-=======================================
+==========================================                
+  VALORIZAMOS O ATENDIMENTO DE QUALIDADE
+==========================================
 */
 .atendimento-section {
   display: flex;
@@ -1110,6 +1096,7 @@ footer {
   cursor: pointer;
   transition: 0.3s;
 }
+
 
 @media (max-width: 768px) {
   .main-title {
