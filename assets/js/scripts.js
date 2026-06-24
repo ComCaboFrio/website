@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const swiper = new Swiper('.cards-container.swiper', {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 40,
+  spaceBetween: 20,
 
   // CONFIGURAÇÃO DO MOVIMENTO (CORRIGIDA)
   autoplay: {
@@ -145,7 +145,7 @@ const swiper = new Swiper('.cards-container.swiper', {
 
   // Breakpoints para manter a responsividade que configuramos
   breakpoints: {
-    576: { slidesPerView: 1, spaceBetween: 40 },
+    576: { slidesPerView: 1, spaceBetween: 20 },
     768: { slidesPerView: 3, spaceBetween: 25 },
     1200: { slidesPerView: 4, spaceBetween: 30 }
   }
