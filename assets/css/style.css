@@ -320,6 +320,8 @@ body {
 
 .list-swiper{
   width: 100%;
+  margin: 0;
+  padding: 40px;
   box-sizing: border-box;
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
 }
@@ -333,8 +335,9 @@ body {
 }
 
 .cards-list {
+  
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
-  padding: 40px;
+  
 }
 
 /*CONTAINER CARDS*/
