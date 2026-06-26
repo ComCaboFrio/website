@@ -56,9 +56,11 @@
             rel="stylesheet">
 
         <!--Stilo SWIPER-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
+        <!--AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+       
         <!--BOOTSTRAP-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -70,9 +72,8 @@
         <!--Estilo CSS-->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" href="assets/css/servicos.css">
         <link rel="stylesheet" href="assets/css/profissionais.css">
-        <link rel="stylesheet" href="assets/css/categorias.css">
+        <link rel="stylesheet" href="assets/css/categoria.css">
         
     </head>
 
@@ -104,7 +105,7 @@
                             <a class="nav-link" href="index.html" alt="Início">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="categorias.html" alt="Serviços">Categorias</a>
+                            <a class="nav-link" href="categoria.html" alt="Serviços">Categorias</a>
                         </li>  
                         <li class="nav-item">
                             <a class="nav-link" href="profissionais.html" alt="Profissionais">Profissionais </a>
@@ -151,7 +152,7 @@
                 </div>
             </section>
 
-            <div class="divisor"></div>
+            <div class="divisor-carousel"></div>
 
             <!--CAROUSEL SECTION-->
             <section class="carousel-section">
@@ -219,21 +220,23 @@
                     </div>
             </section>
 
-            <div class="divisor"></div>
+            <div class="divisor-carousel"></div>
 
             <!-- PROFISSIONAIS DESTAQUE -->
-            <section class="cards-list">
+            <section class="list-swiper">
 
-                <h3 class="main-title">Profissionais em destaque</h3>
+                <h3 class="swiper-title">Profissionais em destaque</h3>
+
+                <div class="divisor-swiper"></div>
 
                 <!-- NOVO CONTAINER PAI PARA CONTROLAR AS SETAS -->
                 <div class="swiper-external-wrapper">
-                    
+                
                     <div class="cards-container swiper">
-
+                
                         <!--WRAPPER DO SWIPER-->
                         <div class="swiper-wrapper">
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/01_eletricista.webp" alt="Eletricista" class="user-image">
@@ -242,7 +245,7 @@
                                     <a href="https://wa.me/5522997994770" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/02_pedreiro.webp" alt="Pedreiro" class="user-image">
@@ -251,7 +254,7 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/06_bombeiro_hidraulico.webp" alt="Bombeiro hidráulico" class="user-image">
@@ -260,16 +263,16 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/07_diarista.webp" alt="Diarista" class="user-image">
                                     <h2 class="user-name">Janaina Medeiros</h2>
                                     <p class="user-profession">Diarista</p>
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
-                                </div>    
+                                </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/03_pintor.webp" alt="Pintor" class="user-image">
@@ -278,7 +281,7 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/08_montagen_moveis.webp" alt="Montagem de móveis" class="user-image">
@@ -287,7 +290,7 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/09_mecanico_moto.webp" alt="Mecânico de motos" class="user-image">
@@ -296,7 +299,7 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/14_barbeiro.webp" alt="Dentista" class="user-image">
@@ -305,7 +308,7 @@
                                     <a href="https://wa.me/5522999999999" target="_blank" class="buttom-destaque">Entrar em contato</a>
                                 </div>
                             </div>
-
+                
                             <div class="swiper-slide">
                                 <div class="card-item">
                                     <img src="img_service/13_cabeleireiro.webp" alt="Cabeleleira" class="user-image">
@@ -316,53 +319,12 @@
                             </div>
                         </div>
                     </div>
-
+                
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
                 
-            </section>
-
-            <!-- SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO -->
-            <section class="info-content">
-                <div id="about-area" class="about-area">
-                    <div class="infot-container">
-
-                        <div class="row align-items-center">
-
-                            <div class="col-12">
-                                <h2 id="info-title" class="info-title">A sua plataforma de serviços em Cabo Frio</h2>
-                            </div>
-
-                            <div class="col-md-6 sobre">
-                                <img class="img-fluid" src="img/ComCaboFrio_01.png" alt="Texto sobre a plataforma de serviços em Cabo Frio">
-                            </div>
-
-                            <div class="col-md-6 mt-4 mt-md-0">
-                                <h3 class="about-title">Conectando prestadores de serviços e clientes
-                                    <br>em um só lugar
-                                </h3>
-                                <p class="text">Seja você um prestador de serviços ou um cliente, o
-                                    ComCaboFrio é a solução ideal para
-                                    facilitar a contratação de serviços e a busca por profissionais qualificados.</p>
-                                <p>Veja outros diferenciais:</p>
-
-                                <ul id="about-list">
-
-                                    <li><i class="fas fa-check"></i>Ampla variedade de prestadores de serviços</li>
-                                    <li><i class="fas fa-check"></i>Contato direto entre prestadores e clientes</li>
-                                    <li><i class="fas fa-check"></i>Avaliação e qualificação dos serviços prestados</li>
-                                    <li><i class="fas fa-check"></i>Facilidade em solicitar orçamentos e comparar preços
-                                    </li>
-                                    <li><i class="fas fa-check"></i>Site projetado para ser intuitivo e fácil de usar
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <!-- SERVIÇOS EM DESTAQUE -->
@@ -689,23 +651,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
         <!--Swuiper JS-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         
-        <!--OS-->
+        <!--AOS-->
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1000,
-                once: true
-            });
-        </script>
+        
         
         <!--FONT AWESOME-->
         <script src="https://kit.fontawesome.com/cf8e11c53f.js" crossorigin="anonymous"></script>
         
         <!--MEU SCRIPTS JS-->
         <script src="assets/js/scripts.js"></script>
-        
+
         <!-- NAVBAR CLOSE MOBILE -->
         <script id="nav-close-mobile">
             document.querySelectorAll('.nav-link').forEach(function (link) {

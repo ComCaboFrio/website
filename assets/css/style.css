@@ -206,7 +206,7 @@ body {
 }
 
 /*linha de separação*/
-.divisor {
+.divisor-carousel {
   width: 10%;
   height: 1px;
   margin: auto;
@@ -294,11 +294,42 @@ body {
       PROFISSIONAIS DESTAQUE
 =================================
 */
-
+@media (max-width: 768px) {
+  .swiper-content {
+    margin: 10px;
+    padding: 10px;
+  }
+}
 .swiper {
+  overflow: hidden;
   /* Isso corta qualquer coisa que saia da caixa principal do slide */
   position: relative;
+  width: 100%;
+  max-width: 100vw;
+  padding: 20px 0;
+  
+}
 
+/*WRAPPER ESPAÇOENTRRE OS CARDS*/
+.swiper-wrapper {
+  align-items: stretch;
+  transition-timing-function: linear !important;
+  box-sizing: border-box;
+
+}
+
+.list-swiper{
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .cards-list {
@@ -312,26 +343,22 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 60px 0;
+  overflow: hidden;
+  position: relative;
 
-  
-}
-
-/*WRAPPER ESPAÇOENTRRE OS CARDS*/
-.swiper-wrapper {
-  align-items: center;
-  transition-timing-function: linear !important;
 }
 
 /*TÌTULO DA SESSÂO*/
-.main-title {
+.swiper-title {
   font-size: 40px;
   font-weight: 450;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 30PX;
+  padding-top: 60px;
+  margin-bottom: 15px;
 }
 
-.main-title::after {
+.swiper-title::after {
   content: "";
   border-top: 2px solid #ffffff;
   width: 80px;
@@ -344,7 +371,7 @@ body {
   -webkit-user-select: none;
   user-select: none;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -397,7 +424,7 @@ body {
   text-decoration: none;
   border-radius: 6px;
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
-    
+
 }
 
 .buttom-destaque:hover {
@@ -410,7 +437,12 @@ body {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  margin: auto;  
+  /* Um pouco maior que o swiper para dar espaço às setas */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -420,10 +452,12 @@ body {
 .swiper-button-next {
   width: auto;
   top: 55%;
+  /* Centraliza verticalmente em relação ao container pai */
   color: #fff;
   transform: translateY(-50%);
   z-index: 10;
-  
+  position: absolute;
+  /* Alinha em relação à div .swiper-external-wrapper */
 }
 
 /* Coloca a seta esquerda antes do início do corte dos cards */
@@ -435,8 +469,9 @@ body {
 .swiper-button-next {
   right: 10px;
 }
-.swiper-button-prev::after,
-.swiper-button-next::after {
+
+.swiper-slide-button::after,
+.swiper-slide-button::after {
   font-size: 30px;
 }
 
@@ -444,7 +479,6 @@ body {
   background-color: #ffffff;
   opacity: 0.7;
 }
-
 /*========================================          
   SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO
   ========================================
