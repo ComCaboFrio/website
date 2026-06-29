@@ -46,18 +46,6 @@ body {
   margin: 0;
 }
 
-
-/* Limpa os bloqueadores de rolagem do navegador */
-html,
-body {
-  overflow-x: hidden;
-  /* Evita barra de rolagem horizontal */
-  overflow-y: visible !important;
-  /* Garante que o sticky consiga calcular o topo */
-  height: auto !important;
-  /* Impede que o corpo trave em 100% da tela */
-}
-
 /*
 ========================               
      NAVBAR SECTION
@@ -71,12 +59,13 @@ body {
 }
 
 .navbar {
+
   width: 100%;
-  position: fixed !important;
+  position: sticky;
   top: 0;
   z-index: 9999;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
@@ -206,7 +195,7 @@ body {
 }
 
 /*linha de separação*/
-.divisor-carousel {
+.divisor {
   width: 10%;
   height: 1px;
   margin: auto;
@@ -294,74 +283,50 @@ body {
       PROFISSIONAIS DESTAQUE
 =================================
 */
-@media (max-width: 768px) {
-  .swiper-content {
-    margin: 10px;
-    padding: 10px;
-  }
-}
-.swiper {
+.cards-list {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+  padding-top: 60px;
+  padding-bottom: 70px;
+  margin: 0;
   overflow: hidden;
-  /* Isso corta qualquer coisa que saia da caixa principal do slide */
-  position: relative;
-  width: 100%;
-  max-width: 100vw;
-  padding: 20px 0;
-  
+  /* Evita que as setas criem barra de rolagem na tela */
 }
 
-/*WRAPPER ESPAÇOENTRRE OS CARDS*/
+/* CONTAINER EXTERNO (NOVO): Centraliza o bloco e cria área segura para as setas */
+.swiper-external-container {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  /* Um pouco maior que o Swiper interno */
+  margin: 0 auto;
+  padding: 0 60px;
+  /* Espaço lateral reservado para as setas */
+  box-sizing: border-box;
+}
+
+/* CONTAINER DO SWIPER INTERNO */
+.swiper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  /* Espaço inferior para as bolinhas da paginação */
+}
+
+/* WRAPPER ESPAÇO ENTRE OS CARDS */
 .swiper-wrapper {
   align-items: stretch;
-  transition-timing-function: linear !important;
-  box-sizing: border-box;
-
 }
 
-.list-swiper{
-  width: 100%;
-  margin: 0;
-  padding: 40px;
-  box-sizing: border-box;
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-}
-
-.swiper-slide {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.cards-list {
-  
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-  
-}
-
-/*CONTAINER CARDS*/
-.cards-container.swiper {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 0;
-  overflow: hidden;
-  position: relative;
-
-}
-
-/*TÌTULO DA SESSÂO*/
-.swiper-title {
+/* TÍTULO DA SESSÃO */
+.main-title {
   font-size: 40px;
   font-weight: 450;
   text-align: center;
   color: #ffffff;
-  padding-top: 60px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.swiper-title::after {
+.main-title::after {
   content: "";
   border-top: 2px solid #ffffff;
   width: 80px;
@@ -369,13 +334,15 @@ body {
   margin: 10px auto 0 auto;
 }
 
-/*CARDS*/
+/* CARDS MODIFICADOS */
 .card-item {
   -webkit-user-select: none;
   user-select: none;
   width: 100%;
-  max-width: 280px;
-  height: 350px;
+  /* DEIXE EM 100%: O Swiper calcula o tamanho correto automaticamente */
+  height: 100%;
+  /* Permite que todos herdem a mesma altura dinamicamente */
+  min-height: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -385,20 +352,21 @@ body {
   gap: 6px;
   padding: 20px;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
-/*FOTO DO PROFISSIONAL*/
+/* FOTO DO PROFISSIONAL */
 .user-image {
   width: 170px;
   height: 170px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   margin-top: 10px;
   margin-bottom: 12px;
 }
 
-/*TEXTO NOME DO PROFISSIONAL*/
+/* TEXTO NOME DO PROFISSIONAL */
 .user-name {
   text-align: center;
   font-size: 22px;
@@ -406,28 +374,27 @@ body {
   margin: 6px 0 0;
 }
 
-/*TEXTO PROFISSÂO*/
+/* TEXTO PROFISSÃO */
 .user-profession {
   text-align: center;
   font-size: 16px;
   color: #262a24;
   margin: 0;
   opacity: 0.85;
-
 }
 
-/*BOTÃO*/
+/* BOTÃO */
 .buttom-destaque {
   width: auto;
   display: inline-block;
   margin-top: auto;
+  /* Joga o botão sempre para o rodapé do card */
   padding: 8px 16px;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
-
 }
 
 .buttom-destaque:hover {
@@ -435,60 +402,45 @@ body {
   box-shadow: 0px 0px 10px #f9f9f9 inset;
 }
 
-/* CONTAINER PAI (NOVO) */
-.swiper-external-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  /* Um pouco maior que o swiper para dar espaço às setas */
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-
-/*SETAS SWIPER*/
-/* SETAS SWIPER (CORRIGIDO) */
+/* SETAS SWIPER RE-POSICIONADAS */
 .swiper-button-prev,
 .swiper-button-next {
-  width: auto;
-  top: 55%;
-  /* Centraliza verticalmente em relação ao container pai */
+  width: 40px;
+  height: 40px;
+  top: 50%;
   color: #fff;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
+  /* Centraliza verticalmente descontando a paginação */
   z-index: 10;
   position: absolute;
-  /* Alinha em relação à div .swiper-external-wrapper */
 }
 
-/* Coloca a seta esquerda antes do início do corte dos cards */
+/* Coloca as setas nas bordas do container externo */
 .swiper-button-prev {
-  left: 10px;
+  left: 5px;
 }
 
-/* Coloca a seta direita depois do fim do corte dos cards */
 .swiper-button-next {
-  right: 10px;
-}
-
-.swiper-slide-button::after,
-.swiper-slide-button::after {
-  font-size: 30px;
+  right: 5px;
 }
 
 .swiper-pagination-bullet {
   background-color: #ffffff;
-  opacity: 0.7;
+  opacity: 0.5;
 }
-/*========================================          
-  SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO
-  ========================================
-*/
 
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+/*
+=================================          
+SUA PLATAFORMA DE SERVIÇOS EM CABO FRIO
+==================================
+*/
 #about-area {
-margin: 25px;
+  margin: 25px;
 }
 
 .infot-container {
@@ -497,6 +449,7 @@ margin: 25px;
   align-items: center;
   flex-direction: column;
 }
+
 #info-title {
   font-size: 10px;
   font-weight: 450;
@@ -560,9 +513,9 @@ margin: 25px;
 }
 
 /*
-===========================                     
+==========================                     
     SERVIÇOS EM DESTAQUE
-===========================
+==========================
 */
 .service_section-flex {
   display: flex;
@@ -614,7 +567,7 @@ margin: 25px;
 
 .service_title {
   font-size: 25px;
-    font-weight: 500;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -745,11 +698,10 @@ margin: 25px;
   }
 }
 
-
 /*
-==========================================                
-  VALORIZAMOS O ATENDIMENTO DE QUALIDADE
-==========================================
+======================================                
+VALORIZAMOS O ATENDIMENTO DE QUALIDADE
+=======================================
 */
 .atendimento-section {
   display: flex;
@@ -760,11 +712,11 @@ margin: 25px;
   width: 100%;
   height: 100%;
   background-color: #fff;
-  }
-  
-  .atendimento-container {
-    margin: 25px;
-    padding: 30px 0;
+}
+
+.atendimento-container {
+  margin: 25px;
+  padding: 30px 0;
 }
 
 .title-atendimento {
@@ -887,7 +839,7 @@ footer {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 20px;
 }
 
 .footer-title {
@@ -1115,6 +1067,7 @@ footer {
   text-decoration: none;
   border-top: 0.8px solid #ffffff;
 }
+
 .bottom_title {
   color: #ffffff;
   text-decoration: none;
@@ -1133,7 +1086,6 @@ footer {
   cursor: pointer;
   transition: 0.3s;
 }
-
 
 @media (max-width: 768px) {
   .main-title {
@@ -1207,12 +1159,8 @@ footer {
 }
 
 .section-dicas {
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-    color: #fff;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .dicas-title {
@@ -1245,12 +1193,8 @@ footer {
 }
 
 .section-sobre {
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-    color: #fff;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 40px;
-    text-align: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .sobre-title {
@@ -1338,7 +1282,7 @@ footer {
 /* O card do formulário */
 .form-container .card {
   width: 100%;
-    max-width: 700px;
+  max-width: 700px;
   height: 100%;
   /* limita tamanho máximo */
   display: flex;
@@ -1388,121 +1332,3 @@ footer {
   END OF STYLE.CSS 
 =====================
 */
-
-
-/* ==========================================================================
-   RESPONSIVIDADE DAS SETAS (COLE NO FIM DO SEU CSS)
-   ========================================================================== */
-/* 
-/* 1. Telas de Notebook/Monitores Médios (Abaixo de 1220px) */
-@media (max-width: 1220px) {
-  .swiper-external-wrapper {
-    max-width: 100%;
-    /* Ocupa a largura total da tela */
-    padding: 0 40px;
-    /* Cria um recuo seguro para as setas não colarem na borda */
-    box-sizing: border-box;
-  }
-
-  .swiper-button-prev {
-    left: 10px;
-  }
-
-  .swiper-button-next {
-    right: 10px;
-  }
-}
-
-/* 2. Tablets e Celulares Grandes (Abaixo de 768px) */
-@media (max-width: 768px) {
-
-  /* Centraliza a seta na nova altura que os cards assumem no mobile */
-  .swiper-button-prev,
-  .swiper-button-next {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  /* Diminui o tamanho das setas para não brigarem com o espaço do card */
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 22px !important;
-  }
-
-  /* Se os cards ficarem muito colados na seta, aumentamos a folga interna */
-  .swiper-external-wrapper {
-    padding: 0 35px;
-  }
-}
-
-/* 3. Celulares Pequenos (Abaixo de 480px) */
-@media (max-width: 480px) {
-
-  /* Em telas muito estreitas, o melhor design é trazer as setas levemente para 
-     dentro do swiper para que o card principal ganhe o máximo de largura possível */
-  .swiper-external-wrapper {
-    padding: 0 10px;
-  }
-
-  .swiper-button-prev {
-    left: 15px;
-    color: #fff;
-    /* Altera para a cor escura do seu tema para dar contraste sobre o fundo branco do card */
-  } */
-
-  .swiper-button-next {
-    right: 15px;
-    color: #fff;
-  }
-
-  /* Garante que a seta fique na frente de tudo no celular */
-  .swiper-button-prev,
-  .swiper-button-next {
-    z-index: 100;
-  }
-}
-
-/* Empurra todo o conteúdo do site para baixo do menu fixo */
-main {
-  padding-top: 60px !important;
-  /* Ajuste este valor se precisar descer mais ou menos */
-}
-
-
-/* Ajustes específicos para o Swiper no Celular (telas até 768px) */
-@media (max-width: 768px) {
-
-  /* 1. Cria um corredor/espaço nas laterais do container para as setas não cobrirem o card */
-  .swiper {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-
-  /* 2. Empurra a seta esquerda bem para o cantinho e muda para azul */
-  .swiper-button-prev {
-    left: 5px !important;
-    color: #fff !important;
-    /* Cor azul escuro da sua marca */
-  }
-
-  /* 3. Empurra a seta direita bem para o cantinho e muda para azul */
-  .swiper-button-next {
-    right: 5px !important;
-    color: #fff !important;
-    /* Cor azul escuro da sua marca */
-  }
-
-  /* 4. Aumenta o tamanho dos ícones das setas para facilitar o clique no celular */
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 24px !important;
-    /* Tamanho perfeito para o dedão */
-    font-weight: bold;
-  }
-
-  /* 5. Ajusta o tamanho do card para ele ficar maior e imponente no centro */
-  .swiper-slide {
-    width: 100% !important;
-    /* Garante que ele use o espaço centralizado disponível */
-  }
-}
