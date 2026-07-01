@@ -36,7 +36,7 @@
 
 /* ===== CARDS_CATEGORIA ===== */
 
-.cards_servicos {
+.cards_categoria {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -48,7 +48,7 @@
 
 /* ===== CARD ===== */
 
-.servicos_card {
+.categoria_card {
     background: #fff;
     border-radius: 18px;
     border: 1px solid #eee;
@@ -62,14 +62,14 @@
 
 /* EFEITO HOVER */
 
-.servicos_card:hover {
+.categoria_card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== IMAGEM ===== */
 
-.servicos_card img {
+.categoria_card img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
