@@ -134,6 +134,7 @@ body {
     MENU INDEX 
 =====================
 */
+
 /*
 ==========================                     
       HERO SECTION
@@ -144,6 +145,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 }
 
@@ -169,9 +171,10 @@ body {
 }
 
 .hero-buttons a {
-  width: 100%;
-  margin: 5px;
-  padding: 12px 20px;
+  width: 280px;
+  margin: 0;
+  padding: 10px 10px;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -828,6 +831,14 @@ body {
   transform: translateY(-5px);
 }
 
+/*FOOTER SECTION*/
+
+#footer-section {
+  background: linear-gradient(135deg, #0f2a44, #1f4e79);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
 
 footer {
   background: linear-gradient(135deg, #0f2a44, #1f4e79);
@@ -836,12 +847,6 @@ footer {
   padding: 20px;
 }
 
-#footer-section {
-  background: linear-gradient(135deg, #0f2a44, #1f4e79);
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-}
 
 .footer-title {
   display: flex;

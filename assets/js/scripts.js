@@ -30,3 +30,13 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
+window.addEventListener('pagehide', (event) => {
+  // Executa a limpeza
+  meuWebSocket.close();
+  
+  // Se você precisa saber se a página vai ser destruída ou guardada no cache:
+  if (event.persisted) {
+    console.log('A página foi guardada no bfcache para reuso rápido.');
+  }
+});
